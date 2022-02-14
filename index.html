@@ -102,8 +102,8 @@ _options:
 </p>
 <p class="editable">Malt is an annual festival celebrating the finest craft beer in San Francisco. This year we have over 50 craft beers on tap, food trucks, live music and entertainment. Tickets are available right here for $45. Valid government issued ID required on entry.</p>
 
-<h3 class="editable">Featured brews</h3>
-<div class="gallery">
+<h3 class="editable">Sessions</h3>
+<!-- <div class="gallery">
 	{% for feature in page.featured_brews %}
 		<a href="{% include relative-src.html src=feature.link %}">
 			<div class="inner-wrapper">
@@ -112,12 +112,12 @@ _options:
 			<p class="caption">{{ feature.title }}</p>
 		</a>
 	{% endfor %}
-</div>
+</div> -->
 
-<h3 class="editable">Get your tickets</h3>
-{{ site.eventbrite_embed }}
+<h3 class="editable">Register here</h3>
+<!--{{ site.eventbrite_embed }}-->
 
-<h3 class="editable">Tell your friends</h3>
+<h3 class="editable">Tell your colleagues</h3>
 <div class="sharing">
 	{% assign share_url = page.url | absolute_url | cgi_escape %}
 	<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}">{% include icons/social-icon.html icon="Facebook" %}</a>
@@ -133,13 +133,14 @@ _options:
 -->
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.920082309533!2d30.979733139562498!3d-29.86657853726344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66ecc5a4c696532c!2sHoward%20College%20Gate%201!5e0!3m2!1sen!2sza!4v1644846470936!5m2!1sen!2sza" width="70%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
+<!--
 <h3 class="editable">Photos from 2015</h3>
 <div class="grid">
 	{% for photo in page.photos %}
 		<div class="grid-item"><a class="fancybox" rel="group" href="{% include relative-src.html src=photo.image %}"><img src="{% include relative-src.html src=photo.image %}" alt="{{ photo.title }}"/></a></div>
 	{% endfor %}
 </div>
-
+-->
 <h3 class="editable">Contact</h3>
 <p class="editable">Send us a message with any questions about sponsoring the event, tickets or anything else.</p>
 
