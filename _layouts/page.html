@@ -2,7 +2,13 @@
 layout: default
 ---
 
-<h1><img class="logo" src="{% include relative-src.html src=page.logo_image %}" alt="Malt Logo"></h1>
+<h1>
+	{% for feature in page.logos %}
+	<img class="logo" 
+	src="{% include relative-src.html src=feature.logo_image %}" 
+	alt="{{ feature.logo_title }}">
+	{% endfor %}
+</h1>
 <h2>{{ page.title }}</h2>
 
 {{ content }}
