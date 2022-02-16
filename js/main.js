@@ -20,7 +20,7 @@ $(window).on("load", function () {
 		fitWidth: true
 	});
 
-	if (getQueryStringParams('submit') === "success") {
-		$(".success").css("display", "block");
-	}
+	// if (getQueryStringParams('submit') === "success") {
+	// 	$(".success").css("display", "block");
+	// }
 });

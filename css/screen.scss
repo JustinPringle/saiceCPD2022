@@ -5,6 +5,9 @@ $tablet: "(min-width: 450px)";
 $mid-point: "(min-width: 620px)";
 $desktop: "(min-width: 768px)";
 
+// @import "functions";
+// @import "variables";
+@import "bootstrap/bootstrap";
 @import "elements";
 @import "layout";
 @import "form";

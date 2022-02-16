@@ -7,7 +7,7 @@
 
 		{% seo %}
 
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Abel">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto-Condensed">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/jquery.fancybox.css">
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
@@ -17,7 +17,8 @@
 		{% if page.background_image %}
 			<style>
 				html {
-					background-image: url({% include relative-src.html src=page.background_image %});"
+					background-image: url({% include relative-src.html src=page.background_image %});
+					background-position:center;
 				}
 			</style>
 		{% endif %}
@@ -33,9 +34,11 @@
 	</head>
 
 	<body>
+		
+
 		<div class="content">{{ content }}</div>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="{{ site.baseurl }}/js/jquery.fancybox.pack.js"></script>
 		<script src="{{ site.baseurl }}/js/masonry.min.js"></script>
 		<script src="{{ site.baseurl }}/js/atc.js"></script>

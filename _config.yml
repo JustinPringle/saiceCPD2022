@@ -13,9 +13,9 @@ timezone: Etc/UTC
 logo: /siteicon.png
 description: Event marketing template for Jekyll.
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+  name: Justin Pringle
+  email: pringlej@ukzn.ac.za
+  twitter: efml_ukzn # twitter username without the @ symbol
 social:
   name: Malt Template
   links:

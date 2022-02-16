@@ -1,11 +1,26 @@
 ---
 title: Not Found
-background_image: /uploads/2015/12.jpeg
+background_image: /images/background.jpg
 permalink: /404.html
+logos:
+  
+  - logo_image: /images/ukznLogo2.jpg
+    logo_title: UKZN
+  - logo_image: /images/SAICE.jpg
+    logo_title: SAICE
 ---
 
-<h1><img class="logo" src="/images/ukznLogo.jpg" alt="Malt Logo"></h1>
-<h2>{{ page.title }}</h2>
+<div>
+	<a class=retun href="{{site.baseurl}}">Return</a>
+</div>
+<!-- <h1>
+	{% for feature in page.logos %}
+	<img class="logo" 
+	src="{% include relative-src.html src=feature.logo_image %}" 
+	alt="{{ feature.logo_title }}">
+	{% endfor %}
+</h1>	 -->
+<!-- <h2>{{ page.title }}</h2>
 
 <p>This page doesnt exist!</p>
 
@@ -13,4 +28,4 @@ permalink: /404.html
 	<a href="https://cloudcannon.com/">
 		Template by CloudCannon
 	</a>
-</p>
+</p> -->
