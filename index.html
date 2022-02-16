@@ -108,7 +108,7 @@ _options:
 	</span>
 </p>
 </div>
-<div>
+<div class="description">
 <p class="editable">
   This course aims to develop and demonstrate innovation, 
   technical competence and professional expertise in 
@@ -126,7 +126,7 @@ _options:
 
   <div class="text">
       <h3 class="editable">Sessions</h3>
-      <h4 class="editable">Wednesday to Thursday</h5>
+      <h4 class="editable">{{ page.start_datetime | date: "%A " }} to {{ page.end_datetime | date: "%A  " }}</h4>
         <p class="editable">0830 – 1200 Morning Session with a coffee/tea break</p>
         <p class="editable">1200 – 1300 Lunch</p>
         <p class="editable">1300 – 1600 Afternoon Session with short break</p>
