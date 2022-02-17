@@ -17,43 +17,26 @@ map:
   zoom: 16
   latitude: 37.7938462
   longitude: -122.3970253
-featured_brews:
-  - label_image: /uploads/beers/label-1.png
-    title: Count Chocula
-    link: #
-  - label_image: /uploads/beers/label-2.png
-    title: Professor Pope
-    link: #
-  - label_image: /uploads/beers/label-3.png
-    title: Blazing Dog
-    link: #
-  - label_image: /uploads/beers/label-4.png
-    title: Extravagant Bartender
-    link: #
-  - label_image: /uploads/beers/label-5.png
-    title: Brain Sour
-    link: #
-  - label_image: /uploads/beers/label-6.png
-    title: Chinchilla
-    link: #
-  - label_image: /uploads/beers/label-7.png
-    title: Frosty Boots
-    link: #
-  - label_image: /uploads/beers/label-8.png
-    title: Grape Pirate
-    link: #
-  - label_image: /uploads/beers/label-9.png
-    title: Blue Bus
-    link: #
-  - label_image: /uploads/beers/label-10.png
-    title: Orange Tank
-    link: #
-  - label_image: /uploads/beers/label-11.png
-    title: Kangaroo
-    link: #
-  - label_image: /uploads/beers/label-12.png
-    title: CloudCannon
-    link: #
+accomodations:
+  - label_image: /uploads/accom/tsogo.png
+    title: Tsogo Sun
+    link: https://www.tsogosun.com/garden-court-marine-parade
+  - label_image: /uploads/accom/avilla.jpg
+    title: Avilla House
+    link: https://avillahouse.co.za
+  - label_image: /uploads/accom/quarters.jpg
+    title: Quaters Hotel
+    link: https://quarters.co.za
+  - label_image: /uploads/accom/glenview.jpg
+    title: Glen View Guest House
+    link: https://www.sa-venues.com/visit/glenviewguesthouse/
+  - label_image: /uploads/accom/deck.png
+    title: The Deck on Manning
+    link: http://thedeckonmanning.co.za/index.php
+  - label_image: /uploads/accom/ekhaya.jpg
+    title: Ekhaya Hotel
+    link: https://www.ekhayaboutiquehotel.co.za
+  
 photos:
   - image: /uploads/2015/1.jpeg
     title: Malt Festival 1
@@ -166,16 +149,18 @@ registerPage: https://forms.gle/bbi7SntWxwVQMUyH9
  </div>
 
 <h3 class="editable">Accomodation</h3> 
-<div class="'accomodation">
-<iframe src="https://avillahouse.co.za" frameborder="0"width="33%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-<iframe src="https://www.sa-venues.com/visit/glenviewguesthouse/" frameborder="0"width="33%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-<iframe src="https://www.ekhayaboutiquehotel.co.za/gallery.php" frameborder="0"width="33%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<div class="gallery">
+	{% for feature in page.accomodations %}
+		<a href="{% include relative-src.html src=feature.link %}">
+			<div class="inner-wrapper">
+				<img src="{% include relative-src.html src=feature.label_image %}" alt="{{ feature.title }}">
+			</div>
+			<p class="caption">{{ feature.title }}</p>
+		</a>
+	{% endfor %}
 </div>
-<div class="'accomodation">
-  <iframe src="https://www.tsogosun.com/garden-court-marine-parade" frameborder="0"width="33%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  <iframe src="https://quarters.co.za/contact/" frameborder="0"width="33%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  <iframe src="http://thedeckonmanning.co.za" frameborder="0"width="33%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </div>
+
+
 <h3 class="editable">Contact</h3>
 <p class="editable">Send us a message with any questions about sponsoring the event, tickets or anything else.</p>
 
