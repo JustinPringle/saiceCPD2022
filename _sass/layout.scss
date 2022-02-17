@@ -1,4 +1,16 @@
+.button{
+	background-color:#1ddd8b;
+	text-align: center;
+	margin: 20px 0 20px 0;
+	font-size: 2.5em;
+	cursor: pointer;
+	border: none;
+	color: #fff;
 
+	&:hover{
+		background: #0f804f;
+	}
+}
 
 h1 img.logo {
 	width: 230px;

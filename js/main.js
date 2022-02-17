@@ -12,6 +12,7 @@ function getQueryStringParams(sParam) {
 
 $(document).ready(function () {
 	$(".fancybox").fancybox();
+	
 });
 
 $(window).on("load", function () {
@@ -23,4 +24,6 @@ $(window).on("load", function () {
 	// if (getQueryStringParams('submit') === "success") {
 	// 	$(".success").css("display", "block");
 	// }
-});
+}
+
+};);
