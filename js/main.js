@@ -26,4 +26,4 @@ $(window).on("load", function () {
 	// }
 }
 
-};);
+);
