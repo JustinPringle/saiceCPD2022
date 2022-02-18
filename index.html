@@ -151,7 +151,7 @@ registerPage: https://forms.gle/bbi7SntWxwVQMUyH9
 <h3 class="editable">Accomodation</h3> 
 <div class="gallery">
 	{% for feature in page.accomodations %}
-		<a href="{% include relative-src.html src=feature.link %}">
+		<a href="{% include relative-src.html src=feature.link %}" target="_blank">
 			<div class="inner-wrapper">
 				<img src="{% include relative-src.html src=feature.label_image %}" alt="{{ feature.title }}">
 			</div>
